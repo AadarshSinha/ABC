@@ -2,7 +2,7 @@ from flask import Flask,render_template,request,jsonify
 import pickle
 from PIL import Image
 import numpy as np
-model = pickle.load(open("model3.pkl", "rb"))
+model = pickle.load(open("model2.pkl", "rb"))
 app=Flask(__name__)
 
 @app.route('/',methods=['GET'])
